@@ -9,7 +9,7 @@ describe('getVendingResult', () => {
   });
 
   it('should return product C and no change for 2.33 USD with product C selected', () => {
-    expect(getVendingResult('50 50 20 20 B')).toBe({
+    expect(getVendingResult('50 50 50 50 20 10 2 1 B')).toBe({
       change: null,
       product: 'C',
     });
