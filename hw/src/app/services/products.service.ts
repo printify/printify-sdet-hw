@@ -16,6 +16,6 @@ export class ProductsService {
   }
 
   getProductById(id: string): Observable<Blueprint>{
-    return this.http.get<Blueprint>(`https://run.mocky.io/v3/c3a4c523-7e87-4f6f-b9a8-f501c053fd65?id=${id}`)
+    return this.http.get<Blueprint>(`https://private-5b881d-printifyhomework.apiary-mock.com/blueprints/${id}`)
   }
 }
