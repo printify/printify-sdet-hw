@@ -6,6 +6,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
+  // tslint:disable-next-line
   @Output() onChange = new EventEmitter<string>();
 
   constructor() { }

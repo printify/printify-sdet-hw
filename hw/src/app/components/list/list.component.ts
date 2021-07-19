@@ -17,15 +17,13 @@ export class ListComponent implements OnInit {
     this.productsService.getProducts().subscribe((d) => {
       this.originalProducts = d;
       this.products = d;
-    })
+    });
   }
 
   onChange(searchText: string) {
-    console.log(`list:`, searchText);
-
     this.products = this.originalProducts.filter((p: Blueprint) => {
       return p.name.toLocaleLowerCase().includes(searchText.toLocaleLowerCase());
-    })
+    });
 
   }
 }
