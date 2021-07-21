@@ -2,5 +2,5 @@
 
 ### Task
 
-![task](./docs/img.png)
+![task](./docs/instructions.png)
 
