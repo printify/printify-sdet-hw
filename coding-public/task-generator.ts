@@ -30,5 +30,5 @@ if (mode === 'write') {
     const output = path.resolve(__dirname, sourceFolder);
     rimraf.sync(sourceFolder)
     ZipFile.ExtractToDirectory(taskFile, output, secret);
-    console.log(`Task ${taskNumber} was decrypted to ${output}`)
+    console.log(`Task ${taskNumber} was decrypted. Find next instructions ${output}/README.md`)
 }
